@@ -13,4 +13,17 @@ This dataset is originally from the National Institute of Diabetes and Digestive
 
 The datasets consists of several medical predictor variables and one target variable, Outcome. Predictor variables includes the number of pregnancies the patient has had, their BMI, insulin level, age, and so on.
 
+### Result and Conclusion
+In this case study, we looked at predicting diabetes for 768 patients. There was a reasonable amount of class imbalance with just under 35% of patients having diabetes. There were no missing data, and initial looks at the data showed it would be difficult to separate patients with diabetes from those that did not have diabetes.
 
+Three advanced modeling techniques were used to predict whether or not a patient has diabetes. The most successful of these techniques proved to be an **AdaBoost Classification technique**, which had the following metrics:
+
+**Accuracy score for adaboost** : 0.7792207792207793
+
+**Precision score adaboost** : 0.7560975609756098
+
+**Recall score adaboost** : 0.5636363636363636
+
+**F1 score adaboost** : 0.6458333333333333
+
+Based on the initial look at the data, it is unsurprising that Glucose, BMI, and Age were important in understanding if a patient has diabetes. These were consistent with more sophisticated approaches. Interesting findings were that pregnancy looked to be correlated when initially looking at the data. However, this was likely due to its large correlation with age.
